@@ -8,47 +8,47 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="styles.css">
-<link rel="stylesheet" type="text/css" href="animation.css">
     <title>Big Reveal</title>
   </head>
   <body>
-<!-- Welcome -->
-<div id="1" class="container-fluid text-center welcomeDiv">
-            <div class="carousel-caption welcomeOverLayText">
-<h1>Countdown to Big Reveal:</h1>
-  <ul>
-    <li><span id="days"></span>days</li>
-    <li><span id="hours"></span>Hours</li>
-    <li><span id="minutes"></span>Minutes</li>
-    <li><span id="seconds"></span>Seconds</li>
-  </ul>            </div>
-</div>
-<div id="2" class="container-fluid text-center wheelsHeelsDiv d-none">
-</div>
-    <!-- Form -->
-<div id="3" class="container-fluid text-center d-none formDiv">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEk1SZw3WIu85QkR9C3oilCLk1MwyktkHxx7_Mea6UWIivtA/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-<!-- Baby Image -->
-<div id="4" class="container-fluid text-center babyImageDiv d-none">
-      <h1 style="color: white">Connect with us:</h1>
-</div>
-<div id="5" class="d-none">
-  <div class="container-fluid text-center">
-  <ul>
-    <li><span>Melbourne</span>23<sup style="text-transform: lowercase;">rd</sup> August, 01:00 PM</li>
-    <li><span>India</span>23<sup style="text-transform: lowercase;">rd</sup> August, 08:30 AM</li>
-    <li><span>Toronto</span>22<sup style="text-transform: lowercase;">rd</sup> August, 11:00 PM</li>
-    <li><span>Vancouver</span>22<sup style="text-transform: lowercase;">nd</sup> August, 08:00 PM</li>
-    <li><span>Regina</span>22<sup style="text-transform: lowercase;">nd</sup> August, 09:00 PM</li>
-    <li><span>Adelaide</span>23<sup style="text-transform: lowercase;">rd</sup> August, 12:30 PM</li>
-  </ul>
+<nav class="navbar navbar-light bg-light">
+      <button class="btn btn-outline-secondary my-2 my-sm-0 d-none" id="backButton" onclick="backButtonClicked()" type="submit">Back</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" id="nextButton" onclick="nextButtonClicked()" type="submit">Next</button>
+</nav>
+<div class="jumbotron">
+  <div id="1" class="text-center welcomeDiv">
+    <div class="carousel-caption welcomeOverLayText">
+      <h1>Countdown to Big Reveal:</h1>
+      <ul>
+        <li><span id="days"></span>days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
   </div>
+    <div id="2" class="text-center wheelsHeelsDiv d-none">
+    </div>
+    <div id="3" class="container-fluid text-center d-none formDiv">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEk1SZw3WIu85QkR9C3oilCLk1MwyktkHxx7_Mea6UWIivtA/viewform?embedded=true" width="640" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…
+        </iframe>
+    </div>
+    <div id="4" class="container-fluid text-center babyImageDiv d-none">
+      <h1 style="color: white">Connect with us:</h1>
+    </div>
+
+    <div id="5" class="d-none">
+      <div class="container-fluid text-center">
+        <ul>
+          <li><span>Melbourne</span>23<sup style="text-transform: lowercase;">rd</sup> August, 01:00 PM</li>
+          <li><span>India</span>23<sup style="text-transform: lowercase;">rd</sup> August, 08:30 AM</li>
+          <li><span>Toronto</span>22<sup style="text-transform: lowercase;">rd</sup> August, 11:00 PM</li>
+          <li><span>Vancouver</span>22<sup style="text-transform: lowercase;">nd</sup> August, 08:00 PM</li>
+          <li><span>Regina</span>22<sup style="text-transform: lowercase;">nd</sup> August, 09:00 PM</li>
+          <li><span>Adelaide</span>23<sup style="text-transform: lowercase;">rd</sup> August, 12:30 PM</li>
+        </ul>
+      </div>
 </div>
-  <footer id="sticky-footer" class="py-4 btnFooter">
-       <button id="backButton" onclick="backButtonClicked()" type="button" class="btn btn-secondary d-none bottomBtn">Back</button> 
-     <button id="nextButton" type="button" onclick="nextButtonClicked()" class="btn btn-success bottomBtn">Next</button> 
-  </footer>
 
       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
