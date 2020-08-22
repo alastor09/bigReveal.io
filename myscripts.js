@@ -1,6 +1,6 @@
 
 var currentPosition = 1
-var divs = [1, 2, 3, 4]
+var divs = [1, 2, 3, 4, 5]
 var last_element = divs[divs.length - 1];
 var first_element = divs[0];
 
